@@ -5,7 +5,7 @@ module.exports = class scamLinkBan extends Plugin {
   async startPlugin () {
     powercord.api.commands.registerCommand({
       command: 'ng',
-      description: 'gives no giveaways role in mb',
+      description: 'Gives no giveaways role in MB',
       usage: '{c} [user id or ping]',
       executor: (args) => ({
         send: true,
@@ -15,6 +15,6 @@ module.exports = class scamLinkBan extends Plugin {
   }
 
   pluginWillUnload () {
-    powercord.api.commands.unregisterCommand('ng');
+    powercord.api.commands.unregisterCommand('nogiveaways');
   }
 };
